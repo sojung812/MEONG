@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1920">
+  <title>MEONG!</title>
+  <!-- 파비콘 -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+  <!-- 스와이퍼cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!--제이쿼리 라이브러리파일-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!--탭 제이쿼리-->
+  <script src="js/tab_move_script.js"></script>
+  <!-- shop 스와이퍼 -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- 스위트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/static/woff2/SUITE.css" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+  <div id="wrap">
+
+
+    <button id="top-btn"> <img src="./images/btn_top.png" alt="top"></button>
+
+
+    <!-- header -->
+    <div id="header_wrap">
+      <div class="header">
+        <h3><a href="./index.html"><img class="logo" src="./images/logo.png" alt="logo"></a></h3>
+        <ul class="gnb">
+          <li><a href="./sub1.html">MEONG!</a></li>
+          <li><a href="./sub2.html">이용안내</a></li>
+          <li><a href="./sub3.html">즐길거리</a></li>
+          <li><a href="./sub4.html">SHOP</a></li>
+        </ul>
+        <ul class="link">
+          <li><a href="#">LOGIN</a></li>
+          <li><a href="#">JOIN</a></li>
+          <li><a href="#"><img src="./images/mypage.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- banner -->
+
+    <div class="swiper banner">
+      <img class="character" src="./images/bg_character.png" alt="character">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#"><img src="./images/banner_01.jpg" alt=""></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#"><img src="./images/banner_02.jpg" alt=""></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#"><img src="./images/banner_03.jpg" alt=""></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#"><img src="./images/banner_04.jpg" alt=""></a>
+        </div>
+      </div>
+      <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- contents1 -->
+
+    <div id="contents1_wrap">
+      <div class="contents1">
+        <h1 class="con1_title">도심에서 즐기는 반려문화라이프</h1>
+        <h3 class="con1_sub">MEONG!과 함께 특별한 순간을 만들어 보세요!</h3>
+      </div>
+      <div class="deco">
+        <img src="./images/main_deco1.png" alt="1">
+        <img src="./images/main_deco2.png" alt="2">
+        <img src="./images/main_deco2.png" alt="3">
+        <img src="./images/main_deco3.png" alt="4">
+        <img src="./images/main_deco3.png" alt="5">
+      </div>
+    </div>
+
+
+
+    <!-- contents2 -->
+
+    <div id="contents2">
+      <h1>OUR SPACE</h1>
+      <div id="wrapper">
+        <!--탭 메뉴 영역(우리가 실제로 클릭할 부분)
+      각각의 li안에 a태그의 아이디를 가진 tab이 보이는 원리이다.
+      -->
+        <ul class="tabs">
+          <li><span tabs="#tab1">
+              1F
+              <br> Shop
+            </span></li>
+          <li><span tabs="#tab2">
+              2F
+              <br> Activity Room
+            </span></li>
+          <li><span tabs="#tab3">
+              3F
+              <br> Cafe
+            </span></li>
+          <li><span tabs="#tab4">
+              4F
+              <br> Play Ground
+            </span></li>
+        </ul>
+
+
+        <!--탭 콘텐츠 영역(tabs를 눌렀을때 변화할 내용들이 들어있는 곳) 모든 tab내용은, 각각 다른아이디를 갖고 있어야 하고, 같은 tab-content라는 클래스를 가지고 있어야 합니다.-->
+        <div class="tab_container">
+
+          <div id="tab1" class="tab_content">
+            <!--Content-->
+            <ul class="tab_content_inner">
+              <li><img src="./images/contents2_1F.png" alt="1F"></li>
+              <li>
+                <h3>Discover & Delight</h3>
+                <p>
+                  1층에 위치한 SHOP에서는 멍멍이의 행복을 위한 다양한 제품을
+                  <br>만나볼 수 있어요! 멍멍이의 건강을 위한 맛있는 사료와 간식,
+                  <br>재미있는 장난감, 귀여운 액세서리까지 모두 준비해 두었답니다.
+                  <br>멍멍이에게 딱 맞는 제품을 찾을 수 있도록 친절한 스태프가
+                  <br>도와드릴게요.
+                </p>
+                <p>
+                  멍멍이에게 좋은 제품을 찾길 바랄게요!
+                </p>
+              </li>
+            </ul>
+          </div>
+
+
+          <div id="tab2" class="tab_content">
+            <!--Content-->
+            <ul class="tab_content_inner">
+              <li><img src="./images/contents2_2F.png" alt="2F"></li>
+              <li>
+                <h3>Learn & Play</h3>
+                <p>
+                  2층의 Activity Room은 멍멍이와 함께 신나게 놀고 배울 수 있는
+                  <br>공간이에요! 원데이 클래스와 다양한 활동이 준비되어 있어서,
+                  <br>멍멍이랑 같이 재밌는 시간을 보낼 수 있어요. 이곳에서 멍멍이와 함께
+                  <br>소중한 추억도 만들고, 서로 더 잘 이해할 수 있는 시간을 가져보세요.
+                </p>
+                <p>
+                  멍멍이와 함께라면 더 특별한 경험이 될 거예요!
+                </p>
+              </li>
+            </ul>
+          </div>
+
+
+          <div id="tab3" class="tab_content">
+            <!--Content-->
+            <ul class="tab_content_inner">
+              <li><img src="./images/contents2_3F.png" alt="3F"></li>
+              <li>
+                <h3>Relax & Enjoy</h3>
+                <p>
+                  3층에 있는 Cafe에서는 멍멍이와 함께 편안하게 쉴 수 있어요.
+                  <br>따뜻한 분위기 속에서 멍멍이랑 맛있는 음료와 간식을 즐기면서,
+                  <br>특별한 교감을 나눌 수 있는 공간이에요. 여기서 멍멍이와 함께하는
+                  <br>시간은 정말 소중한 순간이 될 거예요.
+                </p>
+                <p>
+                  멍멍이와 여유로운 시간을 만끽해보세요!
+                </p>
+              </li>
+            </ul>
+          </div>
+
+
+          <div id="tab4" class="tab_content">
+            <!--Content-->
+            <ul class="tab_content_inner">
+              <li><img src="./images/contents2_4F.png" alt="4F"></li>
+              <li>
+                <h3>Run & Splash</h3>
+                <p>
+                  옥상의 Play Ground는 멍멍이가 마음껏 뛰어놀 수 있는 신나는
+                  <br>공간이에요! 넓은 운동장에서 뛰어다니고, 멍멍이를 위한 수영장도
+                  <br>준비되어 있어요. 여름에는 시원하게 물놀이를 즐기고, 겨울에는
+                  <br> 온수풀로 따뜻하게 수영할 수 있답니다. 계절에 상관없이 멍멍이가
+                  <br> 에너지를 발산할 수 있는 완벽한 장소예요!
+                </p>
+                <p>
+                  이곳에서 멍멍이랑 잊지 못할 추억을 만들어보세요!
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contents3 -->
+    <div id="contents3_wrap">
+      <div class="contents3">
+        <!--마진오토-->
+        <div class="inner">
+          <h1>SHOP</h1>
+        </div>
+        <div class="swiper shop"><!--swiper는 필수 클래스, 그 옆의 클래스는 보조 클래스-->
+          <div class="swiper-wrapper"><!--swiper-wrapper는 필수 클래스-->
+            <div class="swiper-slide">
+              <!--swiper-slide는 필수 클래스-->
+              <a href="#">
+                <img src="./images/contents3_shop_1.png" alt="휴대폰케이스">
+              </a>
+              <div class="hover_box">
+                <a href="#">
+                  <img src="./images/shop_hover1.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./images/contents3_shop_2.png" alt="머그컵">
+              </a>
+              <div class="hover_box">
+                <a href="#">
+                  <img src="./images/shop_hover2.png" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./images/contents3_shop_3.png" alt="포스트카드">
+              </a>
+              <div class="hover_box">
+                <a href="#">
+                  <img src="./images/shop_hover3.png" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./images/contents3_shop_4.png" alt="풉백케이스">
+              </a>
+              <div class="hover_box">
+                <a href="#">
+                  <img src="./images/shop_hover4.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./images/contents3_shop_5.png" alt="담요">
+              </a>
+              <div class="hover_box">
+                <a href="#">
+                  <img src="./images/shop_hover5.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./images/contents3_shop_6.png" alt="쮸르륵스틱">
+              </a>
+              <div class="hover_box">
+                <a href="#">
+                  <img src="./images/shop_hover6.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./images/contents3_shop_7.png" alt="다이어리">
+              </a>
+              <div class="hover_box">
+                <a href="#">
+                  <img src="./images/shop_hover7.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inner">
+          <h3 class="btn"><a href="./sub4.html">더 자세히 알아보기</a></h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="heart_con4_wrap">
+      <div class="heart_wrap">
+        <section class="sticky">
+          <div class="bubbles">
+            <div class="bubble">
+              <img src="./images/contents4_heart.png" alt="1">
+            </div>
+            <div class="bubble">
+              <img src="./images/contents4_heart_small.png" alt="2">
+            </div>
+            <div class="bubble">
+              <img src="./images/contents4_heart_tiny.png" alt="3">
+            </div>
+            <div class="bubble">
+              <img src="./images/contents4_heart.png" alt="4">
+            </div>
+            <div class="bubble">
+              <img src="./images/contents4_heart_small.png" alt="5">
+            </div>
+            <div class="bubble">
+              <img src="./images/contents4_heart_tiny.png" alt="6">
+            </div>
+            <div class="bubble">
+              <img src="./images/contents4_heart_small.png" alt="7">
+            </div>
+            <div class="bubble">
+              <img src="./images/contents4_heart_tiny.png" alt="8">
+            </div>
+            <div class="bubble">
+              <img src="./images/contents4_heart_small.png" alt="9">
+            </div>
+            <div class="bubble">
+              <img src="./images/contents4_heart_small.png" alt="10">
+            </div>
+            <div class="bubble">
+              <img src="./images/contents4_heart_small.png" alt="11">
+            </div>
+            <div class="bubble">
+              <img src="./images/contents4_heart_small.png" alt="12">
+            </div>
+            <div class="bubble">
+              <img src="./images/contents4_heart_tiny.png" alt="13">
+            </div>
+            <div class="bubble">
+              <img src="./images/contents4_heart_tiny.png" alt="14">
+            </div>
+            <div class="bubble">
+              <img src="./images/contents4_heart_small.png" alt="15">
+            </div>
+            <div class="bubble">
+              <img src="./images/contents4_heart_tiny.png" alt="16">
+            </div>
+            <div class="bubble">
+              <img src="./images/contents4_heart_tiny.png" alt="17">
+            </div>
+        </section>
+      </div>
+      <div class="contents4">
+        <h1><img class="t_h" src="./images/contents4_heart_tiny.png" alt="t_h">
+          Meong!
+          <img class="t_h" src="./images/contents4_heart_tiny.png" alt="t_h">
+        </h1>
+        <img class="deco_heart" src="./images/contents4_heart.png" alt="heart">
+        <video src="./images/temp_video2.mp4" muted loop autoplay></video>
+        <div class="contents4_bg"><img src="./images/contents4_bg.png" alt="bg">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div id="footer_wrap">
+      <div class="footer">
+        <div class="logo_wrap">
+          <h1><a href="#"><img src="./images/footer_logo.png" alt=""></a></h1>
+          <p>
+            부산 기장군 기장읍 반송로 1345
+            <br>사업자 등록번호 : 314-15-00784
+            <br>통신판매업신고번호 : 2023-부산기장-00039
+          </p>
+        </div>
+        <div class="sns_link_wrap">
+          <ul class="sns_link">
+            <li>
+              <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/" target="_blank">
+                <img src="./images/sns_naver.png" alt="naver">
+              </a>
+            </li>
+            <li><a
+                href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Faccounts.kakao.com%2Fweblogin%2Faccount%2Finfo#login"
+                target="_blank"><img src="./images/sns_kakao.png" alt="kakao"></a></li>
+            <li><a href="https://www.instagram.com/accounts/login/?hl=ko" target="_blank"><img
+                  src="./images/sns_insta.png" alt="insta"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- banner -->
+  <script>
+    var swiper = new Swiper(".banner", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+
+  </script>
+
+
+  <!-- shop -->
+  <script>
+    var swiper = new Swiper(".shop", {
+      autoplay: {
+        delay: 2000,
+        /*이미지가 자동으로 넘어가는 시간설정. 1000 = 1초*/
+        disableOnInteraction: false,
+      },
+      loop: true,
+      slidesPerView: 4,
+      centeredSlides: true,
+      spaceBetween: 0,
+    });//지우면 안되요!
+
+
+    $('.shop').hover(function () {
+      swiper.autoplay.stop();
+    }, function () {
+      swiper.autoplay.start();
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+
+      // Top 버튼 특정 스크롤높이에서만 보이기 / 숨기기
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('#top-btn').fadeIn();
+        } else {
+          $('#top-btn').fadeOut();
+        }
+      });
+
+      // Top 버튼 클릭시 페이지 상단으로 이동
+      $('#top-btn').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 800);
+        return false;
+      });
+
+    });
+  </script>
+</body>
+
+</html>

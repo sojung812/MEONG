@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920">
+    <title>MEONG!</title>
+    <!-- 파비콘 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+    <!-- 스와이퍼 -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!--제이쿼리 라이브러리파일-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <!-- 스위트 -->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/static/woff2/SUITE.css" rel="stylesheet">
+
+    <!--aos CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--탭 제이쿼리-->
+    <script src="js/tab_move_script2.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/sub3.css">
+</head>
+
+<body>
+
+
+    <div id="wrap">
+
+
+
+        <!-- top_btn -->
+        <button id="top-btn"> <img src="./images/btn_top.png" alt="top"></button>
+
+        <!-- header -->
+        <div id="header_wrap">
+            <div class="header">
+                <h3><a href="./index.html"><img class="logo" src="./images/logo.png" alt="logo"></a></h3>
+                <ul class="gnb">
+                    <li><a href="./sub1.html">MEONG!</a></li>
+                    <li><a href="./sub2.html">이용안내</a></li>
+                    <li><a href="./sub3.html">즐길거리</a></li>
+                    <li><a href="./sub4.html">SHOP</a></li>
+                </ul>
+                <ul class="link">
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                    <li><a href="#"><img src="./images/mypage.png" alt="mp"></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <!-- con1_banner -->
+
+        <div id="banner">
+
+        </div>
+
+    <!-- deco_wrap -->
+        <div id="deco_wrap1">
+            <img src="./images/sub3_con4_deco_pk.png" alt="pk">
+            <img src="./images/sub3_con4_deco_o.png" alt="orange">
+        </div>
+
+
+        <!-- con2 -->
+
+        <div id="contents2_wrap">
+            <h1 class="con2_title"><img src="./images/sub3_con2_title.png" alt="con2_title"></h1>
+
+            <!-- Swiper -->
+            <div class="swiper con2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/sub3_con2_1f_img.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/sub3_con2_2f_img.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/sub3_con2_3f_img.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/sub3_con2_4f_img.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+    <!-- deco_wrap -->
+    <div id="deco_wrap2">
+        <img src="./images/sub3_con4_deco_g.png" alt="green">
+        <img src="./images/sub3_con4_deco_y.png" alt="yellow">
+    </div>
+
+    <!-- con3 -->
+
+    <div id="contents3">
+        <h1><img src="./images/sub3_con3_title.png" alt=con3_title""></h1>
+        <div id="wrapper">
+            <!--탭 메뉴 영역(우리가 실제로 클릭할 부분)
+                각각의 li안에 a태그의 아이디를 가진 tab이 보이는 원리이다.
+                -->
+            <ul class="tabs">
+                <li><span tabs="#tab1">
+                        <img src="./images/sub3_con3_tab1_title.png" alt="tab1_title">
+                    </span></li>
+                <li><span tabs="#tab2">
+                        <img src="./images/sub3_con3_tab2_title.png" alt="tab2_title">
+                    </span></li>
+                <li><span tabs="#tab3">
+                        <img src="./images/sub3_con3_tab3_title.png" alt="tab3_title">
+                    </span></li>
+                <li><span tabs="#tab4">
+                        <img src="./images/sub3_con3_tab4_title.png" alt="tab4_title">
+                    </span></li>
+            </ul>
+        </div>
+
+            <!--탭 콘텐츠 영역(tabs를 눌렀을때 변화할 내용들이 들어있는 곳) 모든 tab내용은, 각각 다른아이디를 갖고 있어야 하고, 같은 tab-content라는 클래스를 가지고 있어야 합니다.-->
+            <div class="tab_container">
+
+                <div id="tab1" class="tab_content">
+                    <!--Content-->
+                    <img src="./images/sub3_con3_tab1.png" alt="tab1">
+
+                </div>
+
+
+                <div id="tab2" class="tab_content">
+                    <!--Content-->
+                    <img src="./images/sub3_con3_tab2.png" alt="tab2">
+                </div>
+
+
+                <div id="tab3" class="tab_content">
+                    <!--Content-->
+                    <img src="./images/sub3_con3_tab3.png" alt="tab3">
+                </div>
+
+
+                <div id="tab4" class="tab_content">
+                    <!--Content-->
+                    <img src="./images/sub3_con3_tab4.png" alt="tab4">
+                </div>
+            </div>
+    </div>
+
+
+        <!-- deco_wrap -->
+        <div id="deco_wrap3">
+            <img src="./images/sub3_con4_deco_b.png" alt="blue">
+            <img src="./images/sub3_con4_deco_p.png" alt="purple">
+        </div>
+
+
+    <!-- con4 -->
+
+    <div id="contents4">
+        <h1><img src="./images/sub3_con4_title.png" alt="con4_title"></h1>
+        <div class="deco_wrap">
+        <img class="map_deco1" src="./images/sub3_con3_map_deco1.png" alt="map_deco">
+        <img class="map_deco2" src="./images/sub3_con3_map_deco2.png" alt="map_deco">
+        </div>
+        <ul class="con4_inner">
+            <li>
+                <img src="./images/sub3_con4_text.png" alt="con4_text">
+            </li>
+            <li class="map_wrap">
+                <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.1207596589084!2d129.1896342!3d35.2532514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35688faf4052a9c5%3A0x2928c180ca4124c3!2z67aA7IKw6rSR7Jet7IucIOq4sOyepeq1sCDquLDsnqXsnY0g67CY7Iah66GcIDEzNDUtMTg!5e0!3m2!1sko!2skr!4v1728018905498!5m2!1sko!2skr" width="565" height="647" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- footer -->
+
+    <div id="footer_wrap">
+        <div class="footer">
+            <div class="logo_wrap">
+                <h1><a href="#"><img src="./images/footer_logo.png" alt=""></a></h1>
+                <p>
+                    부산 기장군 기장읍 반송로 1345
+                    <br>사업자 등록번호 : 314-15-00784
+                    <br>통신판매업신고번호 : 2023-부산기장-00039
+                </p>
+            </div>
+            <div class="sns_link_wrap">
+                <ul class="sns_link">
+                    <li>
+                        <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/"
+                            target="_blank">
+                            <img src="./images/sns_naver.png" alt="naver">
+                        </a>
+                    </li>
+                    <li><a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Faccounts.kakao.com%2Fweblogin%2Faccount%2Finfo#login"
+                            target="_blank"><img src="./images/sns_kakao.png" alt="kakao"></a></li>
+                    <li><a href="https://www.instagram.com/accounts/login/?hl=ko" target="_blank"><img
+                                src="./images/sns_insta.png" alt="insta"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--3. 필수 옵션을 넣는 script부분을 body가장 끝에 넣어준다.-->
+    <!-- Initialize Swiper --><!--옵션부분 pdf파일 참조해주세요-->
+    <script>
+        var swiper = new Swiper(".con2", {
+            spaceBetween: 30,
+            effect: "fade",
+            autoplay: {
+                delay: 4000,
+                /*이미지가 자동으로 넘어가는 시간설정. 1000 = 1초*/
+                disableOnInteraction: false,
+            },
+            loop: true,
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 30,
+        });
+    </script>
+
+
+    <!-- top_btn -->
+    <script>
+        $(document).ready(function () {
+
+            // Top 버튼 특정 스크롤높이에서만 보이기 / 숨기기
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#top-btn').fadeIn();
+                } else {
+                    $('#top-btn').fadeOut();
+                }
+            });
+
+            // Top 버튼 클릭시 페이지 상단으로 이동
+            $('#top-btn').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 800);
+                return false;
+            });
+
+        });
+    </script>
+</body>
+
+</html>

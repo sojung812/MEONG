@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920">
+    <title>MEONG!</title>
+    <!-- 파비콘 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+    <!-- 스와이퍼cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--제이쿼리 라이브러리파일-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!--탭 제이쿼리-->
+    <script src="js/tab_move_script.js"></script>
+    <!-- shop 스와이퍼 -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- 스위트 -->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/static/woff2/SUITE.css" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/sub2.css">
+
+</head>
+
+<body>
+    <div id="wrap">
+
+        <!-- top_btn -->
+
+        <button id="top-btn"> <img src="./images/btn_top.png" alt="top"></button>
+
+
+        <!-- header -->
+        <div id="header_wrap">
+            <div class="header">
+                <h3><a href="./index.html"><img class="logo" src="./images/logo.png" alt="logo"></a></h3>
+                <ul class="gnb">
+                    <li><a href="./sub1.html">MEONG!</a></li>
+                    <li><a href="./sub2.html">이용안내</a></li>
+                    <li><a href="./sub3.html">즐길거리</a></li>
+                    <li><a href="./sub4.html">SHOP</a></li>
+                </ul>
+                <ul class="link">
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                    <li><a href="#"><img src="./images/mypage.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- banner -->
+        <div id="banner_wrap">
+            <img src="./images/sub2_con1_deco1.png" alt="deco1">
+            <img src="./images/sub2_con1_deco1.png" alt="deco1">
+            <img src="./images/sub2_con1_deco3.png" alt="deco3">
+            <img src="./images/sub2_con1_deco2.png" alt="deco2">
+            <img src="./images/sub2_con1_deco3.png" alt="deco3">
+            <img src="./images/sub2_con1_deco3.png" alt="deco3">
+        </div>
+
+        <!-- text flow -->
+
+        <div id="text_flow_wrap">
+            <div class="text_flow">
+                <p>WE CREATE NEW CULTURE</p>
+                <p>WE CREATE NEW CULTURE</p>
+                <p>WE CREATE NEW CULTURE</p>
+                <p>WE CREATE NEW CULTURE</p>
+                <p>WE CREATE NEW CULTURE</p>
+            </div>
+        </div>
+
+        <!-- deco -->
+
+        <div id="deco1">
+            <img src="./images/sub2_deco1.png" alt="deco1">
+        </div>
+
+        <!-- contents1 -->
+
+        <div id="contents1">
+            <h1 class="con1_title">
+                <img src="./images/sub2_con1_title.png" alt="con1_title">
+            </h1>
+            <div class="con1">
+                <img class="con1_fare" src="./images/sub2_con1_fare.png" alt="con1_fare">
+                <img class="con1_time" src="./images/sub2_con1_time.png" alt="con1_time">
+            </div>
+        </div>
+
+
+        <!-- deco -->
+        <div id="deco2">
+            <img src="./images/sub2_deco2.png" alt="deco2">
+        </div>
+
+        <!-- contents2 -->
+
+        <div id="contents2">
+            <h1 class="con2_title"><img src="./images/sub2_con2_title.png" alt="con2_title"></h1>
+            <div class="con2">
+                <img class="con2_caution" src="./images/sub2_con2_caution.png" alt="con2_caution">
+            </div>
+        </div>
+
+
+
+        <!-- deco -->
+        <div id="deco3">
+            <img src="./images/sub2_deco3.png" alt="deco3">
+        </div>
+
+
+        <!-- contents3 -->
+
+        <div id="contents3">
+            <h1 class="con3_title"><img src="./images/sub2_con3_title.png" alt="con3_title"></h1>
+            <div class="con3">
+                <img class="con3_info" src="./images/sub2_con3_info.png" alt="con3_info">
+                <img class="con3_deco1" src="./images/sub2_con3_deco.png" alt="con3_deco">
+                <img class="con3_deco2" src="./images/sub2_con3_deco.png" alt="con3_deco">
+            </div>
+        </div>
+
+
+        <!-- contents4 -->
+
+        <div id="contents4_wrap">
+            <h1 class="con4_title"><img src="./images/sub2_con4_title.png" alt="con3_title"></h1>
+            <ul class="contents4">
+                <li><img class="con4_info" src="./images/sub2_con4_fare.png" alt="con4_fare">
+                    <p>※ 대관 관련 자세한 문의는 카카오톡 채널을 이용해 주세요.</p>
+                </li>
+                <li class="reservation_form">
+
+                    <form action="" id="container">
+                        <table>
+                            <!-- 너비지정 -->
+                            <colgroup>
+                                <col width="20%">
+                                <col width="*">
+                            </colgroup>
+
+                            <!--1-->
+                            <th>예약일시</th>
+                            <td>
+                                <div class="input_wrap">
+                                    <input type="date" style="width: 134px;">
+                                    <input type="time" style="width: 134px;">
+                            </td>
+                            </tr>
+
+                            <tr>
+                                <!--2-->
+                                <th>예약자명</th>
+                                <td>
+                                    <div class="input_wrap">
+                                        <input type="text" placeholder="이름" style="width: 268px;">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <!--2-->
+                                <th>연락처</th>
+                                <td>
+                                    <div class="input_wrap">
+                                        <input type="text" placeholder="'-' 없이 입력해주세요." style="width: 268px;">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <!--3-->
+                                <th>동반인수</th>
+                                <td>
+                                    <div class="input_wrap">
+                                        <input type="number" min="0" max="99" value="1" style="width: 268px;">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+
+
+                            <tr>
+                                <!--4-->
+                                <th>동반견수</th>
+                                <td>
+                                    <div class="input_wrap">
+                                        <input type="number" min="0" max="99" value="1" style="width: 268px;">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    <a class="con4_btn" href="#"><img src="./images/sub2_con4_reservation_bt.png" alt="btn"></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- footer -->
+
+        <div id="footer_wrap">
+            <div class="footer">
+                <div class="logo_wrap">
+                    <h1><a href="#"><img src="./images/footer_logo.png" alt=""></a></h1>
+                    <p>
+                        부산 기장군 기장읍 반송로 1345
+                        <br>사업자 등록번호 : 314-15-00784
+                        <br>통신판매업신고번호 : 2023-부산기장-00039
+                    </p>
+                </div>
+                <div class="sns_link_wrap">
+                    <ul class="sns_link">
+                        <li>
+                            <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/"
+                                target="_blank">
+                                <img src="./images/sns_naver.png" alt="naver">
+                            </a>
+                        </li>
+                        <li><a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Faccounts.kakao.com%2Fweblogin%2Faccount%2Finfo#login"
+                                target="_blank"><img src="./images/sns_kakao.png" alt="kakao"></a></li>
+                        <li><a href="https://www.instagram.com/accounts/login/?hl=ko" target="_blank"><img
+                                    src="./images/sns_insta.png" alt="insta"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- top_btn -->
+    <script>
+        $(document).ready(function () {
+
+            // Top 버튼 특정 스크롤높이에서만 보이기 / 숨기기
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#top-btn').fadeIn();
+                } else {
+                    $('#top-btn').fadeOut();
+                }
+            });
+
+            // Top 버튼 클릭시 페이지 상단으로 이동
+            $('#top-btn').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 800);
+                return false;
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
